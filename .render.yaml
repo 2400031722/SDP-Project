@@ -1,0 +1,7 @@
+services:
+  - type: "static"
+    name: "sdp-project"
+    env: "static"
+    plan: "free"
+    buildCommand: "cd \"sdp project\" && npm ci && npm run build"
+    publishPath: "sdp project/dist"
