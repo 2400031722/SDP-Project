@@ -1,0 +1,8 @@
+{
+  "name": "sdp-project-root",
+  "private": true,
+  "scripts": {
+    "build": "cd \"sdp project\" && npm install && npm run build",
+    "start": "cd \"sdp project\" && npm run dev"
+  }
+}
