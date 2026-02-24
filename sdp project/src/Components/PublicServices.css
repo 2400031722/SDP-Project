@@ -1,0 +1,28 @@
+:root{
+  --panel: rgba(255,255,255,0.02);
+  --muted: rgba(230,238,245,0.6);
+  --accent: #17c38a;
+}
+
+.ps-root{padding:18px}
+.ps-search-row{margin-bottom:18px}
+.ps-search{width:100%; max-width:780px; padding:12px 14px; border-radius:10px; background:var(--panel); border:1px solid rgba(255,255,255,0.03); color:#e8f6ff}
+.ps-title{margin:6px 0 18px}
+
+.ps-grid{display:grid; grid-template-columns:1fr 1fr; gap:18px}
+.ps-card{display:flex; justify-content:space-between; align-items:center; padding:18px; background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005)); border-radius:10px; border:1px solid rgba(255,255,255,0.03)}
+.ps-card-left{display:flex; gap:14px; align-items:center}
+.ps-icon{width:56px; height:56px; border-radius:12px; display:flex; align-items:center; justify-content:center; background:rgba(255,255,255,0.03)}
+.ps-name{font-weight:700}
+.ps-desc{font-size:13px; color:var(--muted); margin-top:6px}
+
+.ps-card-right{display:flex; flex-direction:column; align-items:flex-end; gap:8px}
+.ps-badge{padding:6px 10px; border-radius:999px; font-weight:700; font-size:12px}
+.ps-badge.green{background:rgba(44,191,138,0.12); color:#36d08a}
+.ps-badge.orange{background:rgba(242,176,46,0.08); color:#f2b02e}
+.ps-link{color:#18c38a; font-weight:600; cursor:pointer}
+
+@media(max-width:900px){
+  .ps-grid{grid-template-columns:1fr}
+  .ps-search{max-width:100%}
+}

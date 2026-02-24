@@ -1,0 +1,20 @@
+:root{
+  --panel: rgba(255,255,255,0.02);
+  --muted: rgba(230,238,245,0.6);
+}
+
+.ri-root{padding:18px}
+.ri-root h2{margin-bottom:18px}
+.ri-form{max-width:820px; background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005)); border:1px solid rgba(255,255,255,0.03); padding:22px; border-radius:12px}
+.ri-label{display:block; font-size:13px; color:var(--muted); margin-bottom:8px}
+.ri-select, .ri-input{width:100%; padding:12px 14px; border-radius:10px; background:var(--panel); border:1px solid rgba(255,255,255,0.03); color:#e8f6ff; margin-bottom:16px}
+.ri-textarea{width:100%; min-height:120px; padding:12px 14px; border-radius:10px; background:var(--panel); border:1px solid rgba(255,255,255,0.03); color:#e8f6ff; margin-bottom:12px}
+.ri-priority{display:flex; gap:12px; margin:10px 0 18px}
+.ri-radio{background:rgba(255,255,255,0.02); padding:8px 12px; border-radius:8px; display:flex; align-items:center; gap:8px}
+.ri-radio input{accent-color:#18c38a}
+.ri-actions{text-align:left}
+.ri-submit{background:linear-gradient(90deg,#15b88b,#00c6ff); color:#05323b; padding:12px 28px; border-radius:10px; border:none; font-weight:700; cursor:pointer}
+
+@media(max-width:900px){
+  .ri-form{padding:16px}
+}

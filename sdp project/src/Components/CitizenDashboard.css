@@ -1,0 +1,42 @@
+:root{
+  --bg-1: #0b2a36;
+  --bg-2: #122b37;
+  --panel: rgba(255,255,255,0.03);
+  --muted: rgba(230,238,245,0.6);
+}
+
+.dash-root{display:flex; min-height:100vh; background: linear-gradient(180deg,#0b2333 0%, #1f3a47 100%); color:#e8f6ff}
+.dash-sidebar{width:240px; padding:20px; background: linear-gradient(180deg, rgba(3,12,18,0.6), rgba(3,12,18,0.45)); box-shadow: inset -60px 0 120px rgba(0,0,0,0.25);}
+.dash-brand{display:flex; gap:12px; align-items:center; margin-bottom:18px}
+.dash-logo{width:44px; height:44px; border-radius:8px; background:linear-gradient(180deg,#24c08b,#11b3d4); display:flex; align-items:center; justify-content:center}
+.dash-title .dash-main-title{font-weight:700}
+.dash-title .dash-sub{font-size:12px; color:var(--muted)}
+.dash-nav{display:flex; flex-direction:column; gap:10px; margin-top:18px}
+.nav-item{background:transparent; color:var(--muted); padding:12px 14px; border-radius:8px; text-align:left; border:none; cursor:pointer}
+.nav-item.active{background:linear-gradient(90deg,#164e49,#1b5d58); color:#bff2df}
+
+.dash-main{flex:1; display:flex; flex-direction:column}
+.dash-header{display:flex; justify-content:space-between; align-items:center; padding:18px 28px; border-bottom:1px solid rgba(255,255,255,0.03)}
+.dash-search input{width:640px; max-width:70%; padding:12px 14px; border-radius:10px; background:var(--panel); border:1px solid rgba(255,255,255,0.03); color:#e8f6ff}
+.dash-user{display:flex; gap:12px; align-items:center}
+.dash-user-avatar{width:40px; height:40px; border-radius:8px; background:linear-gradient(180deg,#2cbf8a,#04b8ff); display:flex; align-items:center; justify-content:center; font-weight:700}
+.dash-user-meta{display:flex; flex-direction:column; text-align:right; margin-right:6px}
+.dash-user-name{font-weight:600}
+.dash-user-role{font-size:12px; color:var(--muted)}
+.dash-logout{background:#c04848; color:white; border:none; padding:8px 12px; border-radius:8px; cursor:pointer}
+
+.dash-content{padding:28px}
+.overview-cards{display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-bottom:20px}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border:1px solid rgba(255,255,255,0.03); padding:18px; border-radius:10px}
+.card.stat .card-title{font-size:13px; color:var(--muted)}
+.card.stat .card-value{font-size:20px; margin-top:8px}
+.card.stat .good{color:#21d07a}
+.card.stat .moderate{color:#f2b02e}
+
+.quick-cards{display:grid; grid-template-columns:repeat(4,1fr); gap:16px}
+.card.big{padding:28px; text-align:center; font-weight:600}
+
+@media(max-width:900px){
+  .dash-search input{width:320px}
+  .overview-cards,.quick-cards{grid-template-columns:repeat(2,1fr)}
+}

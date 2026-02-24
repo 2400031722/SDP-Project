@@ -1,0 +1,35 @@
+.reports-root{padding:8px 0}
+.reports-root h2{margin:0 0 14px; color:#f8fafc}
+.reports-panel{background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005)); padding:18px; border-radius:12px; border:1px solid rgba(255,255,255,0.03)}
+.reports-tabs{display:flex; gap:12px; margin-bottom:14px}
+.r-tab{background:transparent; color:var(--muted); padding:8px 12px; border-radius:10px; border:none; cursor:pointer}
+.r-tab.active{background:rgba(255,255,255,0.02); color:#fff}
+
+.reports-list{display:flex; flex-direction:column; gap:12px}
+.report-row{display:flex; justify-content:space-between; align-items:center; padding:18px; border-radius:10px; background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005)); border:1px solid rgba(255,255,255,0.02)}
+.report-left{display:flex; gap:14px; align-items:flex-start}
+.report-badge{width:60px; font-weight:700; color:#fff; background:rgba(17,24,39,0.4); border-radius:8px; padding:10px}
+.report-badge.high{background:linear-gradient(90deg,#ef4444,#f97316)}
+.report-badge.medium{background:linear-gradient(90deg,#f59e0b,#fbbf24)}
+.report-badge.resolved{background:linear-gradient(90deg,#10b981,#34d399)}
+.report-content .report-title{font-weight:700}
+.report-content .prio{margin-left:10px; padding:4px 8px; border-radius:8px; font-size:12px; font-weight:700}
+.prio.high{background:#ef4444; color:#fff}
+.prio.medium{background:#f59e0b; color:#fff}
+.prio.resolved{background:#10b981; color:#fff}
+.report-desc{color:var(--muted); margin-top:6px}
+
+.report-right{display:flex; flex-direction:column; align-items:flex-end; gap:8px}
+.report-dept{font-weight:700}
+.report-meta{display:flex; gap:10px; align-items:center}
+.report-status{padding:6px 10px; border-radius:8px; font-weight:700}
+.report-status.pending{background:#6b7280; color:#fff}
+.report-status.inprogress{background:#3b82f6; color:#fff}
+.report-status.resolved{background:#10b981; color:#fff}
+.report-time{color:var(--muted); font-size:13px}
+.report-action{background:#f59e0b; color:#fff; border:none; padding:8px 10px; border-radius:10px; cursor:pointer}
+
+@media(max-width:900px){
+  .report-row{flex-direction:column; align-items:flex-start}
+  .report-right{align-items:flex-start}
+}
